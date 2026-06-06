@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Hamei.pet</title>
 </head>
 <body>
     <header>
-        <div class="container cabecalho">
-            <div class="logotipo">Hamei <span class="bege">.pet</span></div>
-            <button class="hamburguer"></button>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviço</a>
-                <a href="#">Contatos</a>
-            </nav>
-        </div>
-    </header> 
+    <div class="container cabecalho">
+        <div class="logotipo">Hamei <span class="bege">.pet</span></div>
+        <button class="hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviço</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </div>
+</header>
     <main>
         <section class="hero" id="hero">
            <div class="container">
@@ -108,7 +111,7 @@
 
             </div>
 
-            <form class="contatos-formulario">
+            <form class="contatos-formulario" novalidate>
     <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
 
     <input type="email" id="email" name="email" placeholder="seu@email.com" required>
@@ -128,6 +131,6 @@
     </div>
 </footer>
     </main> 
-    <script src="./scripts.js"></script>  
+    <script src="scripts.js" defer></script>  
 </body>
 </html>

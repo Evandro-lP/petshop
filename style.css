@@ -6,6 +6,7 @@
 
 body {
     font-family: "poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -124,27 +125,6 @@ h2 {
     left: 24px;
 }
 
-@media (max-width: 768px) {
-    .hero .hero-conteudo {
-        max-width: 90%;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        padding-right: 0;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero-img img {
-        display: none;
-    }
-
-    .hero-img-gato img{
-        display: none;
-    }
-}
 
 .sobre{
     display: flex;
@@ -191,11 +171,6 @@ h2 {
     font-family: "fredoka", sans-serif;
     font-size: 40px;
     color: #2D5A27;
-}
-@media (max-width: 768px) {
-    .sobre-info {
-        flex-direction: column;
-    }
 }
 
 .contatos {
@@ -250,4 +225,143 @@ h2 {
     color: #2D5A27;
     font-weight: bold;
     border-radius: 8px;
+}
+
+
+.input-erro {
+    border: 2px solid red !important;
+}
+
+.mensagem-erro {
+    color: #D9534F;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .hamburguer {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #2D5A27;
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        position: relative;
+    }
+
+    .cabecalho .menu {
+        display: none;
+        flex-direction: column;
+
+        position: absolute;
+        top: 70px;
+        right: 20px;
+
+        width: 200px;
+
+        background: white;
+
+        padding: 20px;
+        border-radius: 10px;
+
+        gap: 15px;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+        z-index: 1000;
+    }
+
+    .cabecalho .menu.ativo {
+        display: flex;
+    }
+
+    .cabecalho .menu a {
+        text-decoration: none;
+        color: #2D5A27;
+    }
+
+    .hero {
+        min-height: 100vh;
+        margin: 10px;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-conteudo {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-acoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-acoes button {
+        width: 100%;
+    }
+
+    .hero-img,
+    .hero-img-gato {
+        display: none;
+    }
+
+    .sobre-info {
+        flex-direction: column;
+    }
+
+    .sobre-img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .sobre-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-indicadores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contatos-container {
+        flex-direction: column;
+    }
+
+    .contatos-info,
+    .contatos-formulario {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .logotipo {
+        font-size: 2rem;
+    }
+
+  
 }
