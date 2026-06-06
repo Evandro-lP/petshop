@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+h1 {
+    font-family: "fredoka", sans-serif;
+    font-size: 48px;
+}
+
+h1, h2 {
+    font-family: "fredoka", sans-serif;
+    color: #2D5A27;
+}
+
+h2 {
+    font-size: 40px;
+}
+.bege {
+    color:#B87333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 16px;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.cabecalho .menu a {
+    text-decoration: none;
+    color: #2D5A27;
+}
+
+.logotipo{
+   display: flex;
+   align-items: center;
+   color: #2D5A27;
+   font-size: 40px;
+   font-family: "Fredoka", sans-serif;
+   font-weight: 700;
+}
+
+.logotipo img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    background-color: #2D5A27;
+    margin: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    padding: 40px 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 40px;
+    max-width: 70%;
+}
+
+.hero .hero-acoes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero .hero-acoes button {
+    padding: 16px 24px;
+    background-color: #B87333;
+    color: #2D5A27;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.hero .hero-acoes a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-img img{
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 24px
+}
+
+.hero-img-gato img {
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+}
+
+@media (max-width: 768px) {
+    .hero .hero-conteudo {
+        max-width: 90%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-img img {
+        display: none;
+    }
+
+    .hero-img-gato img{
+        display: none;
+    }
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.sobre-info{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.sobre-info .sobre-conteudo{
+    flex: 1;
+}
+.sobre-info .sobre-img {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    background-color: #B87333;
+    border-radius: 30px;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-indicadores {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.sobre-indicadores .sobre-indicador-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.sobre-indicadores .sobre-indicador-item strong {
+    font-family: "fredoka", sans-serif;
+    font-size: 40px;
+    color: #2D5A27;
+}
+@media (max-width: 768px) {
+    .sobre-info {
+        flex-direction: column;
+    }
+}
+
+.contatos {
+    background-color: #2D5A27;
+    color: white;
+    padding: 64px 0;
+}
+
+.contatos-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contatos-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contatos-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contatos-formulario input {
+    width: 100%;
+    padding: 16px 24px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.titulo-secao {
+    color: #B87333;
+    margin-bottom: 16px;
+}
+
+.contatos-item{
+    display: flex;
+    gap: 8px;
+}
+
+.contatos-formulario button {
+    padding: 16px 24px;
+    width: 100%;
+    border: 0;
+    background-color: #B87333;
+    color: #2D5A27;
+    font-weight: bold;
+    border-radius: 8px;
+}
